@@ -1,0 +1,17 @@
+body
+{
+  background-color: #C0C0C0;
+}
+
+.centered-div
+{
+  width:50%;
+  margin: 0px auto;
+}
+div .quotes
+{
+  text-align: center;
+  border-color: white;
+  border-width: thick;
+  border-style: solid;
+}
