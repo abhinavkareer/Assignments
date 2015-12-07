@@ -5,13 +5,20 @@ a{
   text-decoration: none;
   color:black;
 }
-h1{
+.nav-header h1{
   background: url(../img/logo.png) no-repeat;
   text-indent:-9999px;
-    height: 66px;
-    width:236px;
+  height: 66px;
+  width:236px;
 
 }
+.nav-header{
+  background-color: #F5F5F5;
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index: 199;
+  }
 nav{
   margin:20px 0 0 0;
 }
@@ -22,13 +29,138 @@ nav li{
   display: inline;
   font-size: 17px;
 }
+nav a:hover{
+  font-weight: bold;
+  text-shadow: 2 2 red;
+}
 .wrap{
   padding:20px 0px;
+}
+.post_wrap{
+  padding:80px 0px;
+}
+.title-header
+{
+  background: url(./../img/slide1.jpg);
+  width:100%;
+  height:500px;
+  margin-top: 127px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
 
 
+.title-header img,.post img
+{
+  width:100%;
+  height: 100%;
+}
+
+
+.content h3
+{
+  margin-top: 10px;
+  text-align: center;
+}
+.banner
+{
+  width:100%;
+  height:100%;
+
+  text-align: center;
+  font-size: 21px;
+  padding:15px 0;
+  color:#d9d9d9;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.15);
+    font-size: 38px;
+letter-spacing: 2px;
+text-transform: uppercase;
+font-weight: 700;
+line-height: 1;
+margin-bottom: 30px;
+animation-name: fadeInUp;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+margin: 0 0 30px;
+    font-family: Raleway,sans-serif;
+    z-index: 198;
+    background-color: rgba(0,0,0,.5);
 
 }
-.nav-header{
+.banner-text{
+  text-align: center;
 
-  background-color: #CCC;
-            }
+}
+
+/*Slide animation logic using css and keyframes*/
+.title-header
+{
+  animation-timing-function: ease;
+
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
+}
+.grid_4 ul
+{
+  list-style:none;
+}
+.banner .wrap
+{
+  margin-top: 100px;
+}
+.col3 img
+{
+  border-radius: 10px;
+}
+
+.col2 img
+{
+  /*border-radius: 150px;*/
+margin: 30px 0px;
+}
+
+.col2 .grid_8
+{
+
+  box-sizing: border-box;
+}
+
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
