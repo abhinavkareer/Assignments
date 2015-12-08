@@ -9,6 +9,7 @@ a{
 .nav-header h1{
   background: url(../img/logo.png) no-repeat;
   text-indent:-9999px;
+  margin-top: 20px;
   height: 66px;
   width:236px;
 }
@@ -189,7 +190,6 @@ footer dd
 .title-header
 {
   animation-timing-function: ease;
-
   animation: fadein 3s;
   -moz-animation: fadein 3s; /* Firefox */
   -webkit-animation: fadein 3s; /* Safari and Chrome */
