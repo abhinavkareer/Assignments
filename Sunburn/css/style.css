@@ -187,7 +187,7 @@ footer dd
 }
 
 /*Slide animation logic using css and keyframes*/
-.title-header
+.title-header,.title-header img,.post img,.sponsors img
 {
   animation-timing-function: ease;
   animation: fadein 3s;
