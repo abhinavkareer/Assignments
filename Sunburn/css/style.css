@@ -30,7 +30,7 @@ a{
 /*navbar*/
 nav{
   margin:20px 0 0 0;
-    padding:20px 0px;
+  padding:20px 0px;
 }
 nav ul{
   text-align: right;
@@ -87,11 +87,6 @@ nav a:hover{
   font-weight: 700;
   line-height: 1;
   margin-bottom: 30px;
-  animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
   margin: 0 0 30px;
   font-family: Raleway,sans-serif;
   z-index: 198;
@@ -187,7 +182,7 @@ footer dd
 }
 
 /*Slide animation logic using css and keyframes*/
-.title-header,.title-header img,.post img,.sponsors img
+.title-header,.post img,.sponsors img
 {
   animation-timing-function: ease;
   animation: fadein 3s;
