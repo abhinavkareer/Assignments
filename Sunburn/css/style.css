@@ -42,13 +42,14 @@ nav a:hover{
 .title-header
 {
   background: url(./../img/slide1.jpg);
-  width:100%;
+width:100%;
   height:500px;
   margin-top: 127px;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   overflow: hidden;
+
 }
 
 
@@ -95,6 +96,96 @@ margin: 0 0 30px;
   text-align: center;
 
 }
+/*Styling for footer starts here!*/
+footer{
+  width:100%;
+  background-color: #0F3641;
+
+  background-position: top;
+  padding:10px 0px;
+  height:480px;
+  color:#d9d9d9;
+  font-size: 21px;
+  font-weight:500;
+}
+footer container_12
+{
+  background-color: rgba(0,0,0,.5);
+  border: solid 2px red;
+}
+
+footer dt
+{
+
+
+float:left;
+width:50%;
+}
+
+
+footer dd
+{
+width:50%;
+text-align: right;
+
+float:left;
+}
+.tm
+{
+  bottom:0;
+  background-color:#d9d9d9 ;
+
+font-size: 16px;
+  width:100%;
+  color: #0F3641;
+}
+
+.google_map
+{
+  margin-top: 50px;
+}
+.address
+{
+      padding-bottom: 70px;
+}
+.recent_post_div
+{
+  text-align: center;
+    margin-top: 19px;
+}
+.recent_post_div li
+{
+  display: inline;
+}
+.recent_posts li
+{
+  margin-left: 0px;
+}
+.recent_post_div img
+{
+  width: 40px;
+  height: 40px;
+
+}
+.recent_post_div p
+{
+  font-size: 12px;
+}
+.sponsors img
+{
+  height: 100%;
+  width: 100%;    margin-top: 157px;
+}
+
+.portfolio
+{
+  margin-top: 100px;
+
+}
+.portfolio img
+{
+  border-radius: 0px;
+}
 
 /*Slide animation logic using css and keyframes*/
 .title-header
@@ -130,7 +221,6 @@ margin: 30px 0px;
 
   box-sizing: border-box;
 }
-
 
 @keyframes fadein {
   from {
