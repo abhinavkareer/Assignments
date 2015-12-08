@@ -1,10 +1,15 @@
 body{
-  font-family:sans-serif;
+font-family: 'Nunito', sans-serif;
 }
 a{
   text-decoration: none;
   color:black;
 }
+p
+{
+  text-align: justify;
+}
+
 /*Logo*/
 .nav-header h1{
   background: url(../img/logo.png) no-repeat;
@@ -91,12 +96,14 @@ nav a:hover{
   line-height: 1;
   margin-bottom: 30px;
   margin: 0 0 30px;
-  font-family: Raleway,sans-serif;
   z-index: 198;
   background-color: rgba(0,0,0,.5);
 
 }
-
+.second
+{
+  clear:both;
+}
 /*Styling for footer starts here!*/
 footer{
   width:100%;
@@ -114,18 +121,19 @@ footer container_12
   border: solid 2px red;
 }
 
-/*TIME,LOCATION and Date part*/
-footer dt
-{  float:left;
-  width:50%;
-}
 
+/*TIME,LOCATION and Date part*/
+footer dt,footer dd
+{
+  float:left;
+  width:50%;
+  font-style: normal;
+}
 
 footer dd
 {
-  width:50%;
+
   text-align: right;
-  float:left;
 }
 
 
@@ -220,10 +228,6 @@ footer dd
 {
 
   box-sizing: border-box;
-}
-p
-{
-  text-align: justify;
 }
 
 
