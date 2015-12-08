@@ -24,6 +24,7 @@ a{
   position:fixed;
   top:0px;
   z-index: 199;
+  height:128px;
 }
 /*navbar*/
 nav{
@@ -49,7 +50,7 @@ nav a:hover{
 .title-header
 {
   background: url(./../img/slide1.jpg);
-  height:500px;
+  height:540px;
   margin-top: 127px;
   background-attachment: fixed;
   background-position: center;
@@ -101,7 +102,6 @@ nav a:hover{
 footer{
   width:100%;
   background-color: #0F3641;
-
   background-position: top;
   padding:10px 0px;
   height:508px;
@@ -126,7 +126,6 @@ footer dd
 {
   width:50%;
   text-align: right;
-
   float:left;
 }
 
@@ -220,6 +219,11 @@ footer dd
 
   box-sizing: border-box;
 }
+p
+{
+  text-align: justify;
+}
+
 
 @keyframes fadein {
   from {
