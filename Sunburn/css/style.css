@@ -180,8 +180,12 @@ footer dd
 {
   border-radius: 0px;
 }
-
-/*Slide animation logic using css and keyframes*/
+/*google map*/
+#gmap_canvas img {
+    max-width: none!important;
+    background: none!important
+}
+/* animation logic using css and keyframes*/
 .title-header,.post img,.sponsors img
 {
   animation-timing-function: ease;
