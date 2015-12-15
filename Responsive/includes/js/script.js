@@ -17,6 +17,13 @@ $(function()
 
   });
 
+  $('[data-toggle="tooltip"]').tooltip();
+  // $('.close').click(function(e)
+  // {
+  //   if(confirm("Do you want to Hide this Section?"))
+  //   $(this).parent().parent().css("display","none");
+  //
+  // });
 
 
 });

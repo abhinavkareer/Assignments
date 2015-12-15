@@ -50,6 +50,10 @@ Notes:	 Hand coded for Udemy.com
       {
         height: 315px;
       }
+      #messengerBody
+      {
+        display: none;
+      }
       #slide1
       {
         background: url(./../img/cover1-lg.jpg) top center no-repeat;
@@ -61,6 +65,15 @@ Notes:	 Hand coded for Udemy.com
       #slide3
       {
         background: url(./../img/cover3-lg.jpg) top center no-repeat;
+      }
+      #myPhotos .row
+      {
+        padding-top: 10px;
+      }
+      .onlineSign
+      {
+        height:10px;
+        width:10px;
       }
 /* ------
 --------------------------------
