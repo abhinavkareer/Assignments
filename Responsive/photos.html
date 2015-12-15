@@ -1,434 +1,366 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Amigo|Connections Enhanced</title>
-
-  <!-- Mobile viewport optimized -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="shortcut icon" type="image/png" href="./includes/img/favicon.png"/>
-  <!-- Bootstrap CSS -->
-  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="includes/css/style.css" rel="stylesheet">
-
-  <!-- Include Modernizr in the head, before any other Javascript -->
-  <script src="./includes/js/modernizr-2.6.2.min.js"></script>
+    <meta charset="utf-8">
+    <title>Amigo|Connections Enhanced</title>
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="./includes/img/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="includes/css/style.css" rel="stylesheet">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="./includes/js/modernizr-2.6.2.min.js"></script>
 </head>
+
 <body>
-  <div class="container-fluid" id="main">
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container-fluid">
-
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./">
-            <span class="glyphicon glyphicon-globe"></span> <span class="glyphicon glyphicon-text-background"></span>migo
-          </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li >
-              <a href="./">
-                <span class="glyphicon glyphicon-bullhorn"></span> <span class="hidden-sm">Wall</span>
-              </a>
-            </li>
-            <li ><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="hidden-sm">Message</span>  <span class="badge">+111</span></a></li>
-
-            <li class="active"><a href="./photos.html"><span class="glyphicon glyphicon-picture"></span> <span class="hidden-sm">Photos</span> </a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-sunglasses"></span> <span class="hidden-sm">Friends</span> <span class="badge">+4</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Manish <span class="pull-right"> <span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-remove"></span></span></a></li>
-                <li><a href="#">Arul <span class="pull-right"> <span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-remove"></span></span></a></li>
-                <li><a href="#">Nishant <span class="pull-right"> <span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-remove"></span></span></a></li>
-                <li><a href="#">Pranay <span class="pull-right"> <span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-remove"></span></span></a></li>
-                <li role="separator" class="divider"></li>
-
-                <li><a href="#" class="text-center">You may also know</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Nishant Jain <span class="pull-right"> <span class="glyphicon glyphicon-plus"></span> </span></a></li>
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Events</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Favorites</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Links</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#"><span class="glyphicon glyphicon-home"></span> My Profile</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Account Settings</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Change Password</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
-      <!-- container fluid ends -->
-    </nav>
-    <!-- navbar ends -->
-
-
-    <div class="container" id="mainContentWrapper">
-      <div class="row" id="mainContainer">
-        <div class="col-xs-12 well">
-          <div class="row">
-
-            <div class=" col-xs-6">
-              <p class="lead"><span class="glyphicon glyphicon-picture"></span> Photos</p>
-            </div>
-            <div class="col-xs-6">
-              <div class="form-group pull-right">
-                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Add Album</a>
-
-                <div class="modal fade" id="myModal">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Add Album</h4>
-                      </div>
-                      <!-- modal header ends -->
-                      <div class="modal-body">
-                        <h4>Create Upload and Share your Memories</h4>
-
-                        <form class="form-horizontal">
-                          <div class="form-group">
-                            <label for="inputName" class="col-lg-2 control-label">Album Title</label>
-                            <div class="col-lg-10">
-                              <input type="text" class="form-control" id="inputName" placeholder="Title">
-                            </div>
-                          </div>
-                          <!-- form group ends -->
-                          <div class="form-group">
-                            <label for="inputDesc" class="col-lg-2 control-label">Description</label>
-                            <div class="col-lg-10">
-                              <input type="email" class="form-control" id="inputDesc" placeholder="Description">
-                            </div>
-                          </div>
-                          <!-- form group ends -->
-                          <div class="form-group">
-                            <label for="inputImg" class="col-lg-2 control-label" data-toggle="tooltip" data-placement="bottom" title="Max File Size:10MB">Images *</label>
-                            <div class="col-lg-10">
-                              <input type="file" name="inputImg" multiple  >
-                              <button class="btn btn-success pull-right" type="submit">Create!</button>
-                            </div>
-                          </div>
-                          <!-- form group ends -->
-                        </form>
-
-                      </div>
-                      <!-- modal body ends -->
-                      <div class="modal-footer">
-                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-                        <button class="btn btn-primary"  type="button">Save changes</button>
-                      </div>
-                      <!-- modal footer ends -->
-                    </div>
-                    <!--modal content ends  -->
-                  </div>
-                  <!-- modal dialoge ends -->
+    <header class="container-fluid" id="main">
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="./"> <span class="glyphicon glyphicon-globe"></span> <span class="glyphicon glyphicon-text-background"></span>migo </a>
                 </div>
-                <!-- end myModal -->
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-        <!-- col-xs-12 ends -->
-        <div class="col-xs-12 well">
-          <div class="row">
-
-            <div class="col-xs-12 text-center">
-              <p class="lead "><span class="glyphicon glyphicon-heart"></span> Your Top 3 pictures</p>
-
-
-
-
-            </div>
-            <div class="col-xs-12 ">
-              <div class="carousel slide" id="myCarousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li class="active" data-slide-to="0" data-to-target="#myCarousel"></li>
-                  <li data-slide-to="1" data-to-target="#myCarousel"></li>
-                  <li data-slide-to="2" data-to-target="#myCarousel"></li>
-                </ol>
-                <!-- Wrapper for slide -->
-                <div class="carousel-inner">
-                  <div class="item active" id="slide1">
-                    <!-- <div class="carousel-caption">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="./"> <span class="glyphicon glyphicon-bullhorn"></span> <span class="hidden-sm">Wall</span> </a>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="hidden-sm">Message</span>  <span class="badge">+111</span></a> </li>
+                        <li class="active"><a href="./photos.html"><span class="glyphicon glyphicon-picture"></span> <span class="hidden-sm">Photos</span> </a> </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-sunglasses"></span> <span class="hidden-sm">Friends</span> <span class="badge">+4</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Manish <span class="pull-right"> <span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-remove"></span></span></a> </li>
+                                <li><a href="#">Arul <span class="pull-right"> <span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-remove"></span></span></a> </li>
+                                <li><a href="#">Nishant <span class="pull-right"> <span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-remove"></span></span></a> </li>
+                                <li><a href="#">Pranay <span class="pull-right"> <span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-remove"></span></span></a> </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" class="text-center">You may also know</a> </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Nishant Jain <span class="pull-right"> <span class="glyphicon glyphicon-plus"></span> </span></a> </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Groups</a> </li>
+                                <li><a href="#">Pages</a> </li>
+                                <li><a href="#">Events</a> </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Favorites</a> </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Links</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search"> </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-home"></span> My Profile</a> </li>
+                                <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Account Settings</a> </li>
+                                <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Change Password</a> </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+        </nav>
+        <!-- navbar ends -->
+    </header>
+    <!-- container fluid ends -->
+    <div class="container" id="mainContentWrapper">
+        <div class="row" id="mainContainer">
+            <section class="col-xs-12 well">
+                <div class="row">
+                    <div class=" col-xs-6">
+                        <p class="lead"><span class="glyphicon glyphicon-picture"></span> Photos</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group pull-right"> <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Add Album</a>
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Add Album</h4> </div>
+                                        <!-- modal header ends -->
+                                        <div class="modal-body">
+                                            <h4>Create Upload and Share your Memories</h4>
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="inputName" class="col-lg-2 control-label">Album Title</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" id="inputName" placeholder="Title"> </div>
+                                                </div>
+                                                <!-- form group ends -->
+                                                <div class="form-group">
+                                                    <label for="inputDesc" class="col-lg-2 control-label">Description</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="email" class="form-control" id="inputDesc" placeholder="Description"> </div>
+                                                </div>
+                                                <!-- form group ends -->
+                                                <div class="form-group">
+                                                    <label for="inputImg" class="col-lg-2 control-label" data-toggle="tooltip" data-placement="bottom" title="Max File Size:10MB">Images *</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="file" name="inputImg" multiple>
+                                                        <button class="btn btn-success pull-right" type="submit">Create!</button>
+                                                    </div>
+                                                </div>
+                                                <!-- form group ends -->
+                                            </form>
+                                        </div>
+                                        <!-- modal body ends -->
+                                        <div class="modal-footer">
+                                            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                                            <button class="btn btn-primary" type="button">Save changes</button>
+                                        </div>
+                                        <!-- modal footer ends -->
+                                    </div>
+                                    <!--modal content ends  -->
+                                </div>
+                                <!-- modal dialoge ends -->
+                            </div>
+                            <!-- end myModal -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- col-xs-12 ends -->
+            <div class="col-xs-12 well">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p class="lead "><span class="glyphicon glyphicon-heart"></span> Your Top 3 pictures</p>
+                    </div>
+                    <section class="col-xs-12 ">
+                        <section class="carousel slide" id="myCarousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li class="active" data-slide-to="0" data-to-target="#myCarousel"></li>
+                                <li data-slide-to="1" data-to-target="#myCarousel"></li>
+                                <li data-slide-to="2" data-to-target="#myCarousel"></li>
+                            </ol>
+                            <!-- Wrapper for slide -->
+                            <div class="carousel-inner">
+                                <div class="item active" id="slide1">
+                                    <!-- <div class="carousel-caption">
                     <h4>Bootstrap 3</h4>
                     <p>sfddsafadlasldjsald ad adslaldja dadsljalkda lahldjaslkjda lasjdlkas</p>
                   </div> -->
-                  <!-- carousel-caption ends -->
-                </div>
-                <!-- item ends -->
-                <div class="item" id="slide2">
-                  <!-- <div class="carousel-caption">
+                                    <!-- carousel-caption ends -->
+                                </div>
+                                <!-- item ends -->
+                                <div class="item" id="slide2">
+                                    <!-- <div class="carousel-caption">
                   <h4>Slide 2</h4>
                   <p>wrewerwerwsfddsafadlasldjsald ad adslaldja dadsljalkda lahldjaslkjda lasjdlkas</p>
                 </div> -->
-                <!-- carousel-caption ends -->
-              </div>
-              <!-- item ends -->
-              <div class="item" id="slide3">
-                <!-- <div class="carousel-caption">
+                                    <!-- carousel-caption ends -->
+                                </div>
+                                <!-- item ends -->
+                                <div class="item" id="slide3">
+                                    <!-- <div class="carousel-caption">
                 <h4>Slide 3</h4>
                 <p>dfsafaqdewqdwqj qweqw;ekq;wke;kwq qwejqw;ek;qwk;lewq</p>
               </div> -->
-              <!-- carousel-caption ends -->
-            </div>
-            <!-- item ends -->
-
-
-
-          </div>
-          <!--  carousel-inner ends-->
-          <!-- Controls -->
-          <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
-          <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-
-
-        </div>
-        <!--  myCarousel ends-->
-        <div class="row" id="myPhotos">
-          <div class="col-sm-12">
-            <h3>My Photos</h3>
-            <div class="tabbable">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab1" data-toggle="tab">Photos</a></li>
-                <li><a href="#tab2" data-toggle="tab">Albums</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="tab1">
-                  <div class="container text-center">
-                    <!-- <p class="lead text-center">Photos you were tagged in</p> -->
-                    <h3>Photos you were tagged in</h3>
-                    <div class="row">
-
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic4.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic2.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic3.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic1.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                    </div>
-                    <!-- Row ends -->
-                    <div class="row">
-
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic3.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic2.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic4.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic3.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                    </div>
-                    <!-- Row ends -->
-                    <div class="row">
-
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic2.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic3.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic2.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                      <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic4.jpg" alt="" class="img-thumbnail img-responsive"></div>
-                    </div>
-                    <!-- Row ends -->
-                  </div>
-                  <!-- Container ends -->
-                </div>
-                <!-- tab pane ends -->
-                <div class="tab-pane" id="tab2">
-                  <div class="container text-center">
-                    <h3 class="text-center">Your Albums</h3>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-3">
-                        <img src="./includes/img/alb1.jpg" alt="" class="img-thumbnail img-responsive">
-                        <p class="lead">Album 1</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-3">
-                        <img src="./includes/img/alb2.jpg" alt="" class="img-thumbnail img-responsive">
-                        <p class="lead">Album 2</p></div>
-                        <div class="col-xs-12 col-sm-3">
-                          <img src="./includes/img/alb3.jpg" alt="" class="img-thumbnail img-responsive">
-                          <p class="lead">Album 3</p></div>
-                          <div class="col-xs-12 col-sm-3">
-                            <img src="./includes/img/alb4.jpg" alt="" class="img-thumbnail img-responsive">
-                            <p class="lead">Album 4</p>
-                          </div>
-                        </div>
-                        <!-- Row ends -->
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-3">
-                            <img src="./includes/img/alb1.jpg" alt="" class="img-thumbnail img-responsive">
-                            <p class="lead">Album 1</p>
-                          </div>
-                          <div class="col-xs-12 col-sm-3">
-                            <img src="./includes/img/alb2.jpg" alt="" class="img-thumbnail img-responsive">
-                            <p class="lead">Album 2</p></div>
-                            <div class="col-xs-12 col-sm-3">
-                              <img src="./includes/img/alb3.jpg" alt="" class="img-thumbnail img-responsive">
-                              <p class="lead">Album 3</p></div>
-                              <div class="col-xs-12 col-sm-3">
-                                <img src="./includes/img/alb4.jpg" alt="" class="img-thumbnail img-responsive">
-                                <p class="lead">Album 4</p>
-                              </div>
-                            </div>
-                            <!-- Row ends -->
-                            <div class="row">
-                              <div class="col-xs-12 col-sm-3">
-                                <img src="./includes/img/alb1.jpg" alt="" class="img-thumbnail img-responsive">
-                                <p class="lead">Album 1</p>
-                              </div>
-                              <div class="col-xs-12 col-sm-3">
-                                <img src="./includes/img/alb2.jpg" alt="" class="img-thumbnail img-responsive">
-                                <p class="lead">Album 2</p></div>
-                                <div class="col-xs-12 col-sm-3">
-                                  <img src="./includes/img/alb3.jpg" alt="" class="img-thumbnail img-responsive">
-                                  <p class="lead">Album 3</p></div>
-                                  <div class="col-xs-12 col-sm-3">
-                                    <img src="./includes/img/alb4.jpg" alt="" class="img-thumbnail img-responsive">
-                                    <p class="lead">Album 4</p>
-                                  </div>
+                                    <!-- carousel-caption ends -->
                                 </div>
-                                <!-- Row ends -->
-                              </div>
-                              <!-- Container ends -->
-                              <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal"> Add Album</a>
-
+                                <!-- item ends -->
                             </div>
-                            <!-- tab pane ends -->
-                          </div>
-                          <!-- tab-content ends -->
-                        </div>
-                        <!--  tabbable ends-->
-                      </div>
-                      <!-- col-sm-12 ends -->
-
-
-
-
-
-
-                    </div>
-                    <!--  moreInfo ends-->
-
-
-                  </div>
-
-
+                            <!--  carousel-inner ends-->
+                            <!-- Controls --><a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a> <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a> </section>
+                        <!--  myCarousel ends-->
+                        <section class="row" id="myPhotos">
+                            <div class="col-sm-12">
+                                <h3>My Photos</h3>
+                                <div class="tabbable">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#tab1" data-toggle="tab">Photos</a> </li>
+                                        <li><a href="#tab2" data-toggle="tab">Albums</a> </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab1">
+                                            <div class="container text-center">
+                                                <!-- <p class="lead text-center">Photos you were tagged in</p> -->
+                                                <h3>Photos you were tagged in</h3>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic4.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic2.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic3.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic1.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                </div>
+                                                <!-- Row ends -->
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic3.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic2.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic4.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic3.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                </div>
+                                                <!-- Row ends -->
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic2.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic3.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic2.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                    <div class="col-xs-12 col-sm-3"><img src="./includes/img/pic4.jpg" alt="" class="img-thumbnail img-responsive"> </div>
+                                                </div>
+                                                <!-- Row ends -->
+                                            </div>
+                                            <!-- Container ends -->
+                                        </div>
+                                        <!-- tab pane ends -->
+                                        <div class="tab-pane" id="tab2">
+                                            <div class="container text-center">
+                                                <h3 class="text-center">Your Albums</h3>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb1.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 1</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb2.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 2</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb3.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 3</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb4.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 4</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Row ends -->
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb1.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 1</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb2.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 2</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb3.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 3</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb4.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 4</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Row ends -->
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb1.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 1</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb2.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 2</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb3.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 3</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-3"> <img src="./includes/img/alb4.jpg" alt="" class="img-thumbnail img-responsive">
+                                                        <p class="lead">Album 4</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Row ends -->
+                                            </div>
+                                            <!-- Container ends --><a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal"> Add Album</a> </div>
+                                        <!-- tab pane ends -->
+                                    </div>
+                                    <!-- tab-content ends -->
+                                </div>
+                                <!--  tabbable ends-->
+                            </div>
+                            <!-- col-sm-12 ends -->
+                        </section>
+                        <!--  myPhotos ends-->
                 </div>
-              </div>
-
-
             </div>
-            <!-- row ends -->
-          </div>
-
-
         </div>
-        <!-- Main ends -->
-        <!--  -->
-        <div class="col-md-3 hidden-sm hidden-xs" id="messengerBar">
-          <div class="panel panel-default">
-            <div class="panel-heading text-center"><span class="glyphicon glyphicon-comment"></span> Messenger <button type="button" id="minMessenger" class="close" data-dismiss="alert"><span class="glyphicon glyphicon-chevron-down"></span></button></div>
+    </div>
+    <!-- row ends -->
+    </section>
+    </div>
+    <!-- Main ends -->
+    <!--  -->
+    <div class="col-md-3 hidden-sm hidden-xs" id="messengerBar">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center"><span class="glyphicon glyphicon-comment"></span> Messenger
+                <button type="button" id="minMessenger" class="close" data-dismiss="alert"><span class="glyphicon glyphicon-chevron-down"></span> </button>
+            </div>
             <table class="table table-hover" id="messengerBody">
-
-
-
-              <tr>
-                <td>User <div class="pull-right"><img src="./includes/img/online.png" alt="" class=" img-responsive onlineSign"></div></td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User<div class="pull-right"><img src="./includes/img/online.png" alt="" class=" img-responsive onlineSign"></div></td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User<div class="pull-right"><img src="./includes/img/online.png" alt="" class=" img-responsive onlineSign"></div></td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User<div class="pull-right"><img src="./includes/img/online.png" alt="" class=" img-responsive onlineSign"></div></td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-              <tr>
-                <td>User</td>
-              </tr>
-
+                <tr>
+                    <td>User
+                        <div class="pull-right"><img src="./includes/img/online.png" alt="" class=" img-responsive onlineSign"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User
+                        <div class="pull-right"><img src="./includes/img/online.png" alt="" class=" img-responsive onlineSign"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User
+                        <div class="pull-right"><img src="./includes/img/online.png" alt="" class=" img-responsive onlineSign"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User
+                        <div class="pull-right"><img src="./includes/img/online.png" alt="" class=" img-responsive onlineSign"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                </tr>
             </table>
-
-          </div>
-          <!-- panel ends -->
         </div>
-        <!-- Messenger Div ends -->
-        <footer class="container well">
-          <ul class="list-inline">
-            <li><a href="#">Policy</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </footer>
+        <!-- panel ends -->
+    </div>
+    <!-- Messenger Div ends -->
+    <footer class="container well">
+        <ul class="list-inline">
+            <li><a href="#">Policy</a> </li>
+            <li><a href="#">Help</a> </li>
+            <li><a href="#">Feedback</a> </li>
+            <li><a href="#">About</a> </li>
+        </ul>
+    </footer>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>
+        window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+</body>
 
-        <script src="http://code.jquery.com/jquery.js"></script>
-
-        <!-- If no online access, fallback to our hardcoded version of jQuery -->
-        <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-
-        <!-- Bootstrap JS -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-
-        <!-- Custom JS -->
-        <script src="includes/js/script.js"></script>
-      </body>
-
-      </html>
+</html>
