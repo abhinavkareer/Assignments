@@ -1,0 +1,138 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+      #mainContainer
+      {
+        margin-top: 52px;
+      }
+
+      #profilePictureBox img
+      {
+        width:100%;
+      }
+      #mainContentWrapper
+      {
+        margin-top: 10px;
+      }
+      #uploadDpButton
+      {
+        margin-top: 3px;
+      }
+      #messengerBar
+      {
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+      }
+
+
+      .carousel-caption
+      {
+        font-size: 24px;
+      }
+      .carousel-caption h4
+      {
+      font-size: 32px;
+      }
+      #myCarousel .item
+      {
+        height: 315px;
+      }
+      #slide1
+      {
+        background: url(./../img/cover1-lg.jpg) top center no-repeat;
+      }
+      #slide2
+      {
+        background: url(./../img/cover2-lg.jpg) top center no-repeat;
+      }
+      #slide3
+      {
+        background: url(./../img/cover3-lg.jpg) top center no-repeat;
+      }
+/* ------
+--------------------------------
+   Typography
+   --------------------------------------
+ }
+ #profilePictureBox
+
+ height:60px;{
+}
+
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+  .panel-default>.panel-heading,.btn-primary
+  {
+  background-color: #777;
+  color:#fff ;
+  border-color: #101010;
+  }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  #slide1
+  {
+    background: url(./../img/cover1-sm.jpg) top center no-repeat;
+  }
+  #slide2
+  {
+    background: url(./../img/cover2-sm.jpg) top center no-repeat;
+  }
+  #slide3
+  {
+    background: url(./../img/cover3-sm.jpg) top center no-repeat;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  #slide1
+  {
+    background: url(./../img/cover1-md.jpg) top center no-repeat;
+  }
+  #slide2
+  {
+    background: url(./../img/cover2-md.jpg) top center no-repeat;
+  }
+  #slide3
+  {
+    background: url(./../img/cover3-md.jpg) top center no-repeat;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}

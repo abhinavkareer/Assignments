@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Amigo|Connections Enhanced</title>
+
+  <!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" type="image/png" href="./includes/img/favicon.png"/>
+  <!-- Bootstrap CSS -->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="includes/css/style.css" rel="stylesheet">
+
+  <!-- Include Modernizr in the head, before any other Javascript -->
+  <script src="./includes/js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid" id="main">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span class="glyphicon glyphicon-globe"></span> <span class="glyphicon glyphicon-text-background"></span>migo
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="./">
+                <span class="glyphicon glyphicon-bullhorn"></span> <span class="hidden-sm">Wall</span>
+              </a>
+            </li>
+            <li ><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="hidden-sm">Message</span>  <span class="badge">+111</span></a></li>
+
+            <li><a href="./photos.html"><span class="glyphicon glyphicon-picture"></span> <span class="hidden-sm">Photos</span> </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-sunglasses"></span> <span class="hidden-sm">Friends</span> <span class="badge">+4</span></a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Events</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Favorites</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Links</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+      <!-- container fluid ends -->
+    </nav>
+    <!-- navbar ends -->
+
+
+    <div class="container" id="mainContentWrapper">
+      <div class="row" id="mainContainer">
+        <div class="col-xs-12 col-md-9">
+          <div class="row" id="content">
+            <div class="col-xs-12 col-sm-4" id="profilePictureBox">
+              <div class="panel panel-default">
+
+                <div class="panel-heading text-center">
+                  <h4 class="panel-title">Abhinav Kareer</h4>
+                </div>
+                <!--Headings end  -->
+                <div class="panel-body">
+                  <img src="./includes/img/pic4.jpg" class="img-thumbnail img-responsive" alt="">
+                </div>
+                <!--  panel body ends-->
+
+
+
+              </div>
+              <!-- panel ends -->
+            </div>
+            <!-- profile picture ends -->
+
+            <div class="col-xs-12 col-sm-8  well">
+              <div class="row" >
+                <div class=" col-xs-10">
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="What's on your mind?">
+
+                </div>
+                <div class="col-xs-2">
+                  <button type="submit" class="btn btn-primary pull-right">Share</button>
+                </div>
+              </div>
+
+              <div class="row" >
+                <h5 class="text-center strong">Recent Photos</h5>
+                <div class="col-xs-4">
+                  <img src="./includes/img/pic2.jpg" alt="..." class="img-thumbnail img-responsive">
+
+                </div>
+                <div class="col-xs-4">
+                  <img src="./includes/img/pic3.jpg" alt="..." class="img-thumbnail">
+
+                </div>
+                <div class="col-xs-4">
+                  <img src="./includes/img/pic1.jpg" alt="..." class="img-thumbnail">
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <!-- post form well ends -->
+          </div>
+          <!-- content ends here -->
+          <div class="row" id="singlePost">
+              <div class="col-xs-12 well">
+            <div class="col-xs-4">
+            <img src="./includes/img/pic1.jpg" alt="..." class="img-thumbnail">
+            </div>
+            <!--col-4 ends here-->
+            <div class="col-xs-8">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <p class="lead">Manish Singh</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nam molestiae, delectus vitae voluptate excepturi impedit culpa, doloremque illum exercitationem a veniam aliquid commodi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nam molestiae, delectus vitae voluptate excepturi impedit culpa, doloremque illum exercitationem a veniam aliquid commodi. Aspernatur quas, cum excepturi dicta facere?</p>
+              <ul class="postButtons list-inline">
+                <li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> <span class="hidden-xs"> Like</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt"></span><span class="hidden-xs"> Share</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> <span class="hidden-xs"> Comment</span></a></li>
+              </ul>
+
+
+            </div>
+            <!-- col-8 ends here -->
+
+          </div>
+          <!-- col-12 well ends here -->
+          </div>
+          <!-- single Post ends here -->
+          <div class="row" id="singlePost">
+              <div class="col-xs-12 well">
+            <div class="col-xs-4">
+            <img src="./includes/img/pic3.jpg" alt="..." class="img-thumbnail">
+            </div>
+            <!--col-4 ends here-->
+            <div class="col-xs-8">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <p class="lead">Gorgeous Divya</p>
+              <p>Awesomeness redifined
+              <img src="./includes/img/img1.jpg" alt="..." class="img-thumbnail"></p>
+              <ul class="postButtons list-inline">
+                <li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> <span class="hidden-xs"> Like</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt"></span><span class="hidden-xs"> Share</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> <span class="hidden-xs"> Comment</span></a></li>
+              </ul>
+
+
+            </div>
+            <!-- col-8 ends here -->
+
+          </div>
+          <!-- col-12 well ends here -->
+          </div>
+          <!-- single Post ends here -->
+          <div class="row" id="singlePost">
+              <div class="col-xs-12 well">
+            <div class="col-xs-4">
+            <img src="./includes/img/pic2.jpg" alt="..." class="img-thumbnail">
+            </div>
+            <!--col-4 ends here-->
+            <div class="col-xs-8">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <p class="lead">Glamorous Jatt</p>
+              <p>
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FrG4TEcSuRg" frameborder="0" allowfullscreen></iframe>
+                </div></p>
+              <ul class="postButtons list-inline">
+                <li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> <span class="hidden-xs"> Like</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt"></span><span class="hidden-xs"> Share</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> <span class="hidden-xs"> Comment</span></a></li>
+              </ul>
+
+
+            </div>
+            <!-- col-8 ends here -->
+
+          </div>
+          <!-- col-12 well ends here -->
+          </div>
+          <!-- single Post ends here -->
+        </div>
+        <!--  -->
+        <div class="col-md-3 hidden-sm hidden-xs" id="messengerBar">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center"><span class="glyphicon glyphicon-comment"></span> Messenger <button type="button" id="minMessenger" class="close" data-dismiss="alert"><span class="glyphicon glyphicon-chevron-down"></span></button></div>
+
+            <table class="table table-hover" id="messengerBody">
+
+
+
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+              <tr>
+                <td>User</td>
+              </tr>
+
+            </table>
+
+          </div>
+          <!-- panel ends -->
+        </div>
+        <!-- Messenger Div ends -->
+
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Main ends -->
+<footer class="container-fluid">
+  <p class="text-center lead">Loading more ...</span></p>
+</footer>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+
+  <!-- If no online access, fallback to our hardcoded version of jQuery -->
+  <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+  <!-- Bootstrap JS -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="includes/js/script.js"></script>
+</body>
+
+</html>
