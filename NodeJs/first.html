@@ -32,11 +32,16 @@
 
     </style>
     <body>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <link rel="shortcut icon" type="image/png" href="./includes/img/favicon.png" />
+      <!-- Bootstrap CSS -->
+      <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <script src="./includes/js/modernizr-2.6.2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script>
 
     var margin = {top: 20, right: 20, bottom: 30, left: 40},
-        width = 2048 - margin.left - margin.right,
+        width = 1500 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
 
     var x = d3.scale.ordinal()
@@ -92,6 +97,12 @@
           .data(data.foodgrains)
           .enter().append("rect")
           .attr("class", "bar")
+          .attr("data-toggle","tooltip")
+          .attr("data-placement","top")
+
+          .attr("title",function(d) { return d.name+":"+d.prod;})
+
+
           .attr("x", function(d) { return x(d.name); })
           .attr("width", x.rangeBand())
           .attr("y", function(d) { return y(d.prod); })
@@ -101,6 +112,15 @@
 
 
     </script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>
+        window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
   </body>
 
 </html>

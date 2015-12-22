@@ -95,6 +95,7 @@
           .data(myKey)
           .enter().append("rect")
           .attr("class", "bar")
+        
           .attr("x", function(d) { return x(d); })
           .attr("width", x.rangeBand())
           .attr("y", function(d) { return y(data.commercial[d]); })
