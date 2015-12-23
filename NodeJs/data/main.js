@@ -4,12 +4,20 @@ var fs=require('fs');
 var oilseed=[];
 var foodgrain=[];
 var commercial={};
-var areaWise={};
+var areaWise=[];
 var southStates=["Andhra Pradesh","Karnataka","Kerala","Tamil Nadu"];
 var lineReader = require('readline').createInterface({
   input: fs.createReadStream(srcFileName)
 });
-
+Array.prototype.clean = function(deleteValue) {
+  for (var i = 0; i < this.length; i++) {
+    if (this[i] == deleteValue) {
+      this.splice(i, 1);
+      i--;
+    }
+  }
+  return this;
+};
 var sortArray=function(arr,prop)
 {
   arr.sort(function (a, b) {
@@ -81,9 +89,17 @@ var createJsonForFirstAssignment=function()
   console.log("initiating first Assignment transformation!!");
   var rawArr=[];
 
-  var populateSingleObj=function(name,prod,unit)
+  var populateSingleObj=function(name,prod)
   {
     this.name=name;
+    this.prod=prod;
+
+  }
+  var populateSingleObjAreaWise=function(year,state,prod)
+  {
+
+    this.year=year.substring(year.indexOf("-")+1);
+    this.state=state;
     this.prod=prod;
 
   }
@@ -137,12 +153,22 @@ var createJsonForFirstAssignment=function()
         }
           if(southStates.indexOf(state)>=0)
           {
+
             // console.log(state);
             for (i=4;i<rawArr.length;i++)
             {
-              areaWise[headers[i-1]]=areaWise[headers[i-1]]||{};
-              areaWise[headers[i-1]][state]=parseFloat(areaWise[headers[i-1]][state]||0)+parseFloat(checkForNA(rawArr[i]));
-            }
+              // areaWise[headers[i-1]]=areaWise[headers[i-1]]||{};
+              // areaWise[headers[i-1]][state]=parseFloat(areaWise[headers[i-1]][state]||0)+parseFloat(checkForNA(rawArr[i]));
+              //  areaWise.push(new populateSingleObjAreaWise(headers[i-1],state,checkForNA(rawArr[i])));
+              if(checkForNA(rawArr[i])!=0)
+              {
+              year=headers[i-1];
+              arr=areaWise[i-4];
+              arr=arr||{year:year.substring(year.indexOf("-")+1)};
+              arr[state]=parseFloat(checkForNA(rawArr[i]));
+              areaWise[i-4]=arr;
+              }
+           }
 
           }
 
@@ -162,9 +188,18 @@ var createJsonForFirstAssignment=function()
 
 lineReader.on('close', function () {
   finalObj={};
-  finalObj.foodgrains=sortArray(foodgrain,"prod");
+  finalObj.foodgrain=sortArray(foodgrain,"prod");
   finalObj.oilseed=sortArray(oilseed,"prod");
-  finalObj.commercial=commercial;
+  myKey=Object.keys(commercial);
+  tempObj=[];
+  for(i=0;i<myKey.length;i++)
+  {
+    tempObj.push({name:myKey[i],data:commercial[myKey[i]]});
+  }
+  finalObj.commercial=tempObj;
+
+  areaWise.clean(null);
+  areaWise.clean(undefined);
   finalObj.areaWise=areaWise;
   fs.writeFile(targetFile1,JSON.stringify(finalObj));
 
